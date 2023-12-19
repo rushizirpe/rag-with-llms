@@ -2,7 +2,7 @@
 
 This repository implements a Retrieval-Augmented Generation (RAG) approach leveraging advanced Language Models (LLMs). RAG combines the power of pre-trained LLMs with efficient information retrieval, enabling context-aware and coherent content generation.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pinecone-io/examples/blob/master/learn/generation/llm-field-guide/llama-2/llama-2-13b-retrievalqa.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Idte3loLPezujpE3vsXzPJZgQPNtMNR2)
 
 ## Features
 
