@@ -1,0 +1,14 @@
+annoy
+faiss-cpu
+numpy==1.21.2
+openai
+pandas
+pinecone-client
+sentence-transformers
+transformers
+torch==1.10.0
+torchvision==0.11.1
+tqdm==4.62.3
+accelerate
+einops    
+bitsandbytes
