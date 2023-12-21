@@ -16,7 +16,7 @@ def main():
     hf_pipeline = hugging_face_pipeline_instance
 
     # Load and preprocess dataset
-    dataset_path = "data/wiki_200k.csv"
+    dataset_path = "data/wiki_sample.csv"
     sentences = load_dataset(dataset_path)
 
     # Filter citations and links from sentences
