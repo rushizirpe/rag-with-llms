@@ -2,7 +2,7 @@
 
 This repository implements a Retrieval-Augmented Generation (RAG) approach leveraging advanced Language Models (LLMs). RAG combines the power of pre-trained LLMs with efficient information retrieval, enabling context-aware and coherent content generation.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Idte3loLPezujpE3vsXzPJZgQPNtMNR2)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rushizirpe/RAG-with-LLMs/blob/main/notebooks/RAG_retrievalqa.ipynb)
 
 ## Features
 
@@ -26,13 +26,10 @@ This repository implements a Retrieval-Augmented Generation (RAG) approach lever
     pip install -r requirements.txt
     ```
 
-3. Explore and run examples in the `examples/` directory.
-
 ## Usage
 ```
 python main.py
 ```
-
 
 ## Contributions
 
@@ -40,4 +37,4 @@ Contributions are welcome! Feel free to open issues, submit pull requests, or su
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
