@@ -18,6 +18,7 @@ class RetrievalQA:
             'relevant_documents': relevant_documents,
             'result': response
         }
+    
 
 # Usage:
 # rag_pipeline = RetrievalQA(llm=my_llm_instance, retriever=my_retriever_instance)

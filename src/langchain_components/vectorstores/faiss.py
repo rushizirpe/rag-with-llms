@@ -4,9 +4,9 @@ from langchain.vectorstores import FAISS
 import numpy as np
 
 class FaissVectorStore:
-    def __init__(self, texts, embeddings):
+    def __init__(self, texts, embed_model_hf, embeddings = "<SKIP>" ):
         self.embeddings = embeddings
-        self.vector_dim = len(embeddings[0])
+        #self.vector_dim = len(embeddings[0])
         self.index = self.build_index()
         self.vectorstore = FAISS.from_texts(texts, embed_model_hf)
 

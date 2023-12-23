@@ -1,6 +1,6 @@
 # src/main.py
 from src.langchain_components.llms import HuggingFacePipeline
-from src.langchain_components.chains import RetrievalQA
+from src.langchain.chains import RetrievalQA
 from src.langchain_components.vectorstores import annoy, pinecone, faiss
 from src.utils.helpers import filter_citations_and_links
 from src.langchain_components import embedding_instance, hugging_face_pipeline_instance
@@ -38,9 +38,9 @@ def main():
     )
 
     # Initialize RetrievalQA chain with Pinecone vector store
-    retrievalqa_pinecone = RetrievalQA.from_chain_type(
-        llm=hf_pipeline, chain_type='stuff', retriever=pinecone_vectorstore.as_retriever()
-    )
+    # retrievalqa_pinecone = RetrievalQA.from_chain_type(
+    #     llm=hf_pipeline, chain_type='stuff', retriever=pinecone_vectorstore.as_retriever()
+    # )
 
     # Initialize RetrievalQA chain with FAISS vector store
     retrievalqa_faiss = RetrievalQA.from_chain_type(
@@ -49,13 +49,13 @@ def main():
 
     # Example usage of the RetrievalQA chains
     response_annoy = retrievalqa_annoy("What are Applications of Large Language Models?")
-    print(response_annoy['result'])
+    print("Response:", response_annoy['result'])
 
-    response_pinecone = retrievalqa_pinecone("What are Applications of Large Language Models?")
-    print(response_pinecone['result'])
+    # response_pinecone = retrievalqa_pinecone("What are Applications of Large Language Models?")
+    # print("Response:", response_pinecone['result'])
 
     response_faiss = retrievalqa_faiss("What are Applications of Large Language Models?")
-    print(response_faiss['result'])
+    print("Response:", response_faiss['result'])
 
 if __name__ == "__main__":
     main()

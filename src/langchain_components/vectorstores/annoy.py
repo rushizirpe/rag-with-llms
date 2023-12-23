@@ -10,7 +10,7 @@ class AnnoyVectorStore:
         self.vectorstore = Annoy.from_texts(texts, HuggingFaceEmbeddings())
         self.annoy_index = AnnoyIndex(self.vector_dim, 'angular')  # 'angular' - similarity metric
         self.embed_model_hf = embed_model_hf
-        self.build_annoy_index(texts)
+        #self.build_annoy_index(texts)
 
     def get_store():
         return self.vectorstore
