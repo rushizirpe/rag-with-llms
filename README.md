@@ -16,8 +16,8 @@ This repository implements a Retrieval-Augmented Generation (RAG) approach lever
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/rushizirpe/RAG-with-LLMs.git
-    cd RAG-with-LLMs
+    git clone https://github.com/rushizirpe/rag-with-llms.git
+    cd rag-with-llms
     ```
 
 2. Install dependencies:
@@ -28,7 +28,7 @@ This repository implements a Retrieval-Augmented Generation (RAG) approach lever
 
 ## Usage
 ```
-python main.py
+streamlit run main.py
 ```
 
 ## Contributions
